@@ -5,7 +5,11 @@ from copy_matches import copy_matches
 
 def main():
     search_dir = "D:/"
-    search_patterns = ["example", ".jpg", "example.jpg"]
+    search_patterns = []
+
+    user_input = input("Enter a search pattern: ")
+
+    search_patterns.append(user_input)
 
     user_name = getlogin()
     user_dir = f"C:/Users/{user_name}/File_Collector"
