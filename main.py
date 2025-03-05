@@ -4,7 +4,7 @@ from find_matches import find_matches
 from copy_matches import copy_matches
 
 def main():
-    search_dir = "D:/"
+    search_dir = str(input("Enter directory to search in (C:/ or D:/):"))
     search_patterns = []
 
     user_input = input("Enter a search pattern: ")
