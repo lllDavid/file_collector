@@ -1,27 +1,39 @@
 ## Use Cases:
 
-- Find and gather **all** files with a specific file extension.
+- Combine **all** files with a specific file **extension** into **one** folder (e.g ".yml", ".jpg", ".json" ...)
 
- - Find and gather **different** files with **same** topic in one folder (e.g cat.txt, cat_image.jpg, cat_video.mp4 ... )
+- Combine files from **different locations** into **one** folder (e.g. file1.txt in one folder, file2.md in other folder...)
 
-- Combine files from different locations into a **single** folder (e.g., collect images from various directories into one folder).
-
-## Cloning
+## Clone
 
 ```bash
 git clone https://github.com/lllDavid/file_collector
 ```
 
-## Save location
+## Save
 
-To adjust the **save** location, change File_Collector to your desired directory in **main.py**:
+To change the **save** location, adjust the path in **user_dir** variable (main.py):
 ```bash
 user_dir = f"C:/Users/{user_name}/File_Collector"
 ```
 
-## Starting
+## Start
 
 ```bash
 cd file_collector
 python main.py
 ```
+
+## Usage
+
+Choose **directory** to search in:
+```bash
+Enter directory to search in (eg. C:/ ): 
+```
+
+Add **pattern/s** (eg. .yml or file1.txt then file2.txt...) next type **s** to perform search:
+```bash
+Add a search pattern (or type 's' to search):
+```
+
+Any matches are **saved** in the user_dir folder path.
