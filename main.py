@@ -4,12 +4,16 @@ from find_matches import find_matches
 from copy_matches import copy_matches
 
 def main():
-    search_dir = str(input("Enter directory to search in (C:/ or D:/):"))
+    search_dir = str(input("Enter directory to search in (e.g., C:/ ): "))
     search_patterns = []
 
-    user_input = input("Enter a search pattern: ")
+    while True:
+        user_input = input("Add a search pattern (or type 's' to search): ")
 
-    search_patterns.append(user_input)
+        if user_input.lower() == 's':
+            break
+
+        search_patterns.append(user_input)
 
     user_name = getlogin()
     user_dir = f"C:/Users/{user_name}/File_Collector"
@@ -18,6 +22,7 @@ def main():
         makedirs(user_dir)
 
     print(f"Searching for files and folders in {search_dir}...")
+
     found_paths = find_matches(search_dir, search_patterns)
 
     if found_paths:
