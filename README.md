@@ -1,3 +1,6 @@
+# File Collector
+![Windows Only](https://img.shields.io/badge/platform-Windows-blue)
+
 ## Use Cases:
 
 - Combine **all** files with a specific file **extension** into **one** folder (e.g ".yml", ".jpg", ".json" ...)
