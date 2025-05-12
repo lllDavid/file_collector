@@ -28,7 +28,7 @@ python main.py
 ## Usage
 
 Choose directory to search in:
-```bash
+```text
 Enter directory to search in (e.g. C:/ ): 
 ```
 
